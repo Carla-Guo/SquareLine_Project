@@ -11,10 +11,10 @@ void ui_Screen1_screen_init(void)
     lv_obj_clear_flag(ui_Screen1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_BORROW = lv_btn_create(ui_Screen1);
-    lv_obj_set_width(ui_BORROW, 100);
-    lv_obj_set_height(ui_BORROW, 50);
-    lv_obj_set_x(ui_BORROW, 525);
-    lv_obj_set_y(ui_BORROW, 60);
+    lv_obj_set_width(ui_BORROW, 200);
+    lv_obj_set_height(ui_BORROW, 100);
+    lv_obj_set_x(ui_BORROW, 636);
+    lv_obj_set_y(ui_BORROW, 127);
     lv_obj_set_align(ui_BORROW, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_BORROW, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
     lv_obj_clear_flag(ui_BORROW, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
@@ -22,19 +22,19 @@ void ui_Screen1_screen_init(void)
     lv_obj_set_style_bg_opa(ui_BORROW, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_RETURN = lv_btn_create(ui_Screen1);
-    lv_obj_set_width(ui_RETURN, 100);
-    lv_obj_set_height(ui_RETURN, 50);
-    lv_obj_set_x(ui_RETURN, 525);
-    lv_obj_set_y(ui_RETURN, 180);
+    lv_obj_set_width(ui_RETURN, 200);
+    lv_obj_set_height(ui_RETURN, 100);
+    lv_obj_set_x(ui_RETURN, 650);
+    lv_obj_set_y(ui_RETURN, 302);
     lv_obj_set_align(ui_RETURN, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_RETURN, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
     lv_obj_clear_flag(ui_RETURN, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_TextArea1 = lv_textarea_create(ui_Screen1);
-    lv_obj_set_width(ui_TextArea1, 800);
-    lv_obj_set_height(ui_TextArea1, 250);
-    lv_obj_set_x(ui_TextArea1, 240);
-    lv_obj_set_y(ui_TextArea1, 400);
+    lv_obj_set_width(ui_TextArea1, 900);
+    lv_obj_set_height(ui_TextArea1, 300);
+    lv_obj_set_x(ui_TextArea1, 510);
+    lv_obj_set_y(ui_TextArea1, 600);
     lv_obj_set_align(ui_TextArea1, LV_ALIGN_CENTER);
     lv_textarea_set_text(ui_TextArea1, "\nPRESS IT!");
     lv_textarea_set_placeholder_text(ui_TextArea1, "Placeholder...");
