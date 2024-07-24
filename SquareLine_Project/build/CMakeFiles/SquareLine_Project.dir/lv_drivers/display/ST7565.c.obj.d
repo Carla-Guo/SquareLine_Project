@@ -1,0 +1,23 @@
+CMakeFiles/SquareLine_Project.dir/lv_drivers/display/ST7565.c.obj: \
+ /home/torpi/book_cornor/SquareLine_Project/SquareLine_Project/lv_drivers/display/ST7565.c \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/stdc-predef.h \
+ /home/torpi/book_cornor/SquareLine_Project/SquareLine_Project/lv_drivers/display/ST7565.h \
+ /home/torpi/book_cornor/SquareLine_Project/SquareLine_Project/lv_drivers/display/../../lv_drv_conf.h \
+ /home/torpi/book_cornor/SquareLine_Project/SquareLine_Project/lv_drivers/display/../../lv_conf.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/lib/gcc/aarch64-none-linux-gnu/13.3.1/include/stdint.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/stdint.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/bits/libc-header-start.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/features.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/features-time64.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/bits/wordsize.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/bits/timesize.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/sys/cdefs.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/bits/long-double.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/gnu/stubs.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/gnu/stubs-lp64.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/bits/types.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/bits/typesizes.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/bits/time64.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/bits/wchar.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/bits/stdint-intn.h \
+ /home/torpi/arm-gnu-toolchain-13.3.rel1-x86_64-aarch64-none-linux-gnu/aarch64-none-linux-gnu/libc/usr/include/bits/stdint-uintn.h
