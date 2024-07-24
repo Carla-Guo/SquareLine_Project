@@ -1,0 +1,3 @@
+/home/torpi/book_cornor/SquareLine_Project/SquareLine_Project/build/CMakeFiles/SquareLine_Project.dir
+/home/torpi/book_cornor/SquareLine_Project/SquareLine_Project/build/CMakeFiles/edit_cache.dir
+/home/torpi/book_cornor/SquareLine_Project/SquareLine_Project/build/CMakeFiles/rebuild_cache.dir
