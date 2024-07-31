@@ -193,80 +193,81 @@ int get_random_index() {
 }
 
     //播放动画
-void play_animations() {
+const char *get_values() {
 
     // Get two random values from the array
     int random_index1 = get_random_index();
-    int random_index2 = get_random_index();
+    // int random_index2 = get_random_index();
     const char *random_value1 = random_values[random_index1];
+    return random_value1;
     //const char *random_value2 = random_values[random_index2];
 
-    // Update the text area with the first random value，更改显示语句
-    lv_textarea_set_text(ui_TextArea1, random_value1);
-    // Update thw image with emoj3，更改表情
-    lv_img_set_src(ui_Image1, &ui_img_emoj3_png);
-    // Run animation1，播放鸡汤动画
-    text_change_Animation(ui_Image1,0);
-    text_change_Animation(ui_TextArea1,0);
+    // // Update the text area with the first random value，更改显示语句
+    // lv_textarea_set_text(ui_TextArea1, random_value1);
+    // // Update thw image with emoj3，更改表情
+    // lv_img_set_src(ui_Image1, &ui_img_emoj3_png);
+    // // Run animation1，播放鸡汤动画
+    // text_change_Animation(ui_Image1,0);
+    // text_change_Animation(ui_TextArea1,0);
     
 
 
-    // Check if the values match，如果中奖
-    if (random_index1 == random_index2) {
+    // // Check if the values match，如果中奖
+    // if (random_index1 == random_index2) {
       
-      // Update the image with the emoj2，更改表情，更改显示语句为celebration
-      lv_img_set_src(ui_Image1, &ui_img_emoj2_png);
-      lv_textarea_set_text(ui_TextArea1, "\nCELEBRATIONS!");
-      // Run animation2，播放中奖动画
-      congratulation_Animation(ui_Image1,0);
-    }
+    //   // Update the image with the emoj2，更改表情，更改显示语句为celebration
+    //   lv_img_set_src(ui_Image1, &ui_img_emoj2_png);
+    //   lv_textarea_set_text(ui_TextArea1, "\nCELEBRATIONS!");
+    //   // Run animation2，播放中奖动画
+    //   congratulation_Animation(ui_Image1,0);
+    // }
 
 
-    usleep(5000000);
-    // Restore the text area and the image，回归初始页面
-    lv_textarea_set_text(ui_TextArea1, "\nPRESS IT!");
-    lv_img_set_src(ui_Image1, &ui_img_emoj1_png);
+    // usleep(5000000);
+    // // Restore the text area and the image，回归初始页面
+    // lv_textarea_set_text(ui_TextArea1, "\nPRESS IT!");
+    // lv_img_set_src(ui_Image1, &ui_img_emoj1_png);
 }
 
-#ifdef __arm__
-void uart_interrupt() {
-    char received[13];
-    int i = 0;
+// #ifdef __arm__
+// void uart_interrupt() {
+//     char received[13];
+//     int i = 0;
 
-    if (gpioInitialise() < 0) {
-        fprintf(stderr, "pigpio initialization failed\n");
-        return;
-    }
+//     if (gpioInitialise() < 0) {
+//         fprintf(stderr, "pigpio initialization failed\n");
+//         return;
+//     }
 
-    uart_fd = serOpen(UART_DEVICE, BAUD_RATE, 0);
-    if (uart_fd < 0) {
-        fprintf(stderr, "Unable to open UART device: %s\n", strerror(errno));
-        gpioTerminate();
-        return;
-    }
+//     uart_fd = serOpen(UART_DEVICE, BAUD_RATE, 0);
+//     if (uart_fd < 0) {
+//         fprintf(stderr, "Unable to open UART device: %s\n", strerror(errno));
+//         gpioTerminate();
+//         return;
+//     }
 
-    memset(received, 0, sizeof(received));
+//     memset(received, 0, sizeof(received));
 
-    while (1) {
-        if (serDataAvailable(uart_fd)) {
-            char ch = serReadByte(uart_fd);
-            if (ch == ' ') continue;
-            received[i++] = ch;
+//     while (1) {
+//         if (serDataAvailable(uart_fd)) {
+//             char ch = serReadByte(uart_fd);
+//             if (ch == ' ') continue;
+//             received[i++] = ch;
 
-            if (i == 12) {
-                if (strcmp(received, "000000010011") == 0) {
-                    play_animations();
-                }
-                i = 0;
-                memset(received, 0, sizeof(received));
-            }
-        }
-    }
+//             if (i == 12) {
+//                 if (strcmp(received, "000000010011") == 0) {
+//                     play_animations();
+//                 }
+//                 i = 0;
+//                 memset(received, 0, sizeof(received));
+//             }
+//         }
+//     }
 
-    serClose(uart_fd);
-    gpioTerminate();
-}
-#endif
+//     serClose(uart_fd);
+//     gpioTerminate();
+// }
+// #endif
 
 
 
@@ -410,7 +411,6 @@ static void hal_init(void)
   /* Add a mouse as input device */
   static lv_indev_drv_t indev_drv;
   lv_indev_drv_init(&indev_drv); /*Basic initialization*/
-
   indev_drv.type = LV_INDEV_TYPE_POINTER;
   indev_drv.read_cb = sdl_mouse_read;
   lv_indev_drv_register(&indev_drv);
